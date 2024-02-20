@@ -12,4 +12,8 @@ for names in a:
     # nested for loop
     for chars in names:
         print(chars, end=', ')
-    print()
+
+
+# Predict the loop execution from where to where
+# for i in range(6):
+#     print(i)
