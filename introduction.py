@@ -10,3 +10,6 @@ print("Hello Python", sep = " seperator ", end = "end")
 # The parameters al so contains -> file and flush
 print("Second Line")
 # default -> end = \n sep = " "
+
+# Quick Quiz -> Output of belop code
+a = print(type(print(5)))

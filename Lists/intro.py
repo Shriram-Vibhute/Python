@@ -6,3 +6,12 @@ print(lst)
 
 # -ve indexing
 print(lst[-3]) # -> lst[len(lst) - 3]
+
+# Quick Quiz -> Output
+lst = [
+    (1,2,5),
+    (2,3,6),
+    (3,4)
+]
+for first, second, third in lst:
+    print(first, second, third)
