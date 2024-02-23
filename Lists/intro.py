@@ -5,7 +5,7 @@ lst = [int(input("Enter the number : ")) for i in range(0, n) if i != 3]
 print(lst)
 
 # -ve indexing
-print(lst[-3]) # -> lst[len(lst) - 3]
+print(lst[0: 5: 2]) # -> lst[len(lst) - 3]
 
 # Quick Quiz -> Output
 lst = [

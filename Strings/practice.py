@@ -42,3 +42,9 @@ print(str.format("python", "C++"))
 str = "Python is my favourite programming language"
 print(str.find("p"))
 print(str.index("p")) # Gives errorif arg in not present in an string
+
+
+# Rounding of the numbers using f strings
+a = 1.2874567324
+a = '{0:.4f}'.format(a)
+print(a)
