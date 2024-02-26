@@ -16,13 +16,20 @@ for i in range (4):
 
 
 # ctime -> converts the from sec to exact time
+import time
 tm = time.ctime(1627908313.717886)
 print(tm)
 
 # time -> returns the total time in seconds from 1 jan 1970 to current
 print(time.time())
 
+# localtime -> Returns the current time in seconds
+print("local Time : ", time.localtime())
 
+# strftime -> Formats the time
+import time
+tm = time.localtime()
+print(time.strftime("%a, %d, %b, %Y, %H:%M:%S", time.gmtime(1627908313)))
 
 from time import gmtime, strftime
 s = strftime("%a, %d %b %Y %H:%M:%S") # This gives current time

@@ -37,7 +37,7 @@
 
 # # Handeling special type of errors using multiple exception values
 # try:
-#     # Here the line at which 1st error will et occured this error object type will get executed
+#     # Here the line at which 1st error will get occured this error object type will get executed
 #     # RAISING VALUE ERROR
 #     a = int(input("Enter the value : "))
 
@@ -57,7 +57,7 @@
 # except TypeError:
 #     print("TypeError")
 
-# # RAISONG CUSTOM ERRORS
+# # RAISEING CUSTOM ERRORS
 # # a = int(input("Enter the value: "))
 # a = input("Enter the value: ")
 # if a == 'quit':
