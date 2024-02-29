@@ -15,10 +15,10 @@ def new_func():
     print("The new num is : ")
 
 # Way 2 -> First Class functions
-# a = f1(new_func)
-# print(a(14))
+a = f1(new_func)
+print(a(14))
 
-# print(f1(new_func)(14))
+print(f1(new_func)(14))
     
 
     
@@ -41,6 +41,13 @@ def decorator_func(x, y):
 def my_fun(*args):
 	for ele in args:
 		print(ele)
-
-# another way of using decorators
 decorator_func(12, 15)(my_fun)('Geeks', 'for', 'Geeks')
+	
+
+# Using decorators
+@decorator_func(12, 15)
+def my_fun(*args):
+	for ele in args:
+		print(ele)
+
+my_fun('Geeks', 'for', 'Geeks')

@@ -25,3 +25,15 @@ def func(txt: str):
 
 clsr = func("Hello")
 print(clsr(" Python"))
+
+
+# doc strings
+class food:
+    """This is doc string"""
+    def food_recipie():
+        """This is doc string of function food_recipie"""
+
+f = food()
+print(f.__doc__)
+print(f.food_recipie.__doc__)
+
