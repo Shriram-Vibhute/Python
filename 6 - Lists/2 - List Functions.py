@@ -85,3 +85,8 @@ print(k)
 
 k = l + m
 print(k)    
+
+k = l * 2
+print(k)
+
+print(2 * [1,1,1])
