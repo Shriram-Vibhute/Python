@@ -74,7 +74,7 @@ if a < 18:
     try:
         raise Exception("Age not valid")  # Raise a custom exception if age is less than 18
     except Exception as e:
-        print(e)  # Handle the custom exception
+        print("The error message is - ", e)  # Handle the custom exception
 else:
     print('ok')  # Confirm valid age
 
@@ -82,3 +82,30 @@ x = "hello"  # Example variable
 
 if not type(x) is int:  # Check if x is not an integer
     raise TypeError("Only integers are allowed")  # Raise a TypeError if x is not an integer
+
+# if else in try-except
+try:
+    a = int(input("Enter your age : "))
+    if a < 18:
+        raise ValueError("Your age is too less for this role")
+    else:
+        print("Your are elegiable for this role")
+except ValueError as v:
+    print("Your error is - ", v)
+
+# Exceptions under loop
+for i in range(5):
+    try:
+        raise ValueError("You are underage") if i < 4 else print("you are ok")
+    except Exception as e:
+        print("Error Message - ", e)
+
+# Loops under Exceptions
+try:
+    for i in range(5):
+        if(i == 4):
+            raise ValueError("Error")
+        else:
+            print(i)
+except Exception as e:
+    print("Error occured")

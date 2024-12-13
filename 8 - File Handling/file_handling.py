@@ -3,6 +3,9 @@ f = open('main.txt', 'x')  # Open a new file for exclusive creation
 f.close()  # Close the file
 
 # Reading a file
+with open('main.txt', mode = 'r') as f:
+  print(f.readlines())
+
 f = open('main.txt', 'r')  # Open the file for reading
 print(f.readlines())  # Provide a list of all lines in the file
 f.close()  # Close the file
@@ -35,13 +38,14 @@ else:
 # r+ -> read - write mode simultaneously
 f = open('main.txt', 'r+')  # Open the file for reading and writing
 f.truncate(10)  # Truncate the file to the first 10 bytes
-f.read()  # Read the content from the file
+print(f.read())  # Read the content from the file
 f.close()  # Close the file
 
 f = open("main.txt", 'w')  # Open the file for writing (overwrites existing content)
 f.writelines(['abc\n', 'def\n', 'ghi'])  # Write multiple lines to the file
 f.close()  # Close the file
 
+# seek and tell
 f = open('main.txt', 'r')  # Open the file for reading
 f.seek(5)  # Move the cursor to the 5th byte
 print(f.readline())  # Read and print the line from the current cursor position

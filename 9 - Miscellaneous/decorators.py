@@ -24,7 +24,6 @@ def outer(func):
     return inner() # because the inner function is calling at this position
 print(outer(myfunc)) # No need to call here
 
-
 # Parameterized Decorator
 def outer(func):
     def inner(a, b):
@@ -60,3 +59,11 @@ def add(a, b):
 
 # Call the decorated function
 print(add(1, 2))
+
+'''
+You cannot do like this
+print("Inside the inner function")
+print(func_inner())
+return new_func
+-> Then this function is not a decorator anymore
+'''
