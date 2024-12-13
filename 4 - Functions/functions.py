@@ -14,8 +14,9 @@ def sequence(a, b):
     print(a + b)
 sequence(b = 45, a = 87)
 
-# Passing arg as list
+# Passing arg as a tuple
 def mean(*array):
+    print(type(array))
     sum = 0
     for i in range(0, len(array)):
         sum += array[i]
@@ -43,3 +44,9 @@ def passFunction():
     pass
 
 # You can use pass statement in loops, if else, functions, match-case etc -> for passing that perticular intance of execution
+
+def dict_func(*args, **kwargs):
+    print(args)
+    print(kwargs)
+dict_func(1,2,3,4, a = 1,b = 2)
+# Normal parameters you provide are called positional arguments

@@ -8,6 +8,9 @@ if __name__ == "__main__":
     # Print the result of adding 45 to the variable 'a'
     print(a + 45)
 
+    # You can multiply string with number
+    print('5' * 5)
+
     # Uncommenting the following lines will cause errors due to type mismatch:
     # Concatenation of string with an integer (not allowed)
     # print("Shriram" + 56)  # This will raise a TypeError

@@ -39,6 +39,8 @@ print(bool(bool_str))  # True; non-empty strings are considered True
 
 # Note: Conversion from string to boolean requires specific handling, such as checking for 'True' or 'False' explicitly.
 
+print(bool('False')) # If any type of content is present in string (even False) it will typecast it to true. In contrast if the string is false then it will typecast it to false
+
 # Additional conversions:
 # Converting a boolean to integer
 bool_val = True

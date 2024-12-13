@@ -1,7 +1,7 @@
 # Arithmetic Operators
 a = 10
 b = 5
-
+        
 print("Arithmetic Operators:")
 print("Addition (a + b):", a + b)           # 15
 print("Subtraction (a - b):", a - b)        # 5
@@ -85,6 +85,8 @@ except ZeroDivisionError as e:
 # Logical Operator with Non-Boolean Types
 print("\nExceptional Case (Logical Operator with Non-Boolean Types):")
 print("'Hello' and 5:", 'Hello' and 5)  # 'Hello' (truthy) and 5 (truthy), so result is 5
+
+print('aaaaaa' and 5 and 'true') # 'True'
 
 # Membership Operator with Different Data Types
 print("\nExceptional Case (Membership Operator with Different Data Types):")
